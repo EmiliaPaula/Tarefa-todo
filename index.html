@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+  <div class="conteudo">
+    <div class="topo">
+      <form name="form_main">
+        <label for="task">Lista de Tarefa: </label><br />
+        <input type="text" name="task" id="task" /> <br />
+        <label for="task">Data: </label><br />
+        <input type="date" name="Data" id="Data" />
+        <button type="button" onclick="add()" class="btnAcao" id="btnAddTarefa">
+          <i class="fa fa-plus"></i></button>
+      </form>
+    </div>
+
+  </div>
+  <fieldset>
+    <legend>Tarefas:</legend>
+    <ul>
+    </ul>
+  </fieldset>
+  <script src="js/tarefas.js"></script>
+</body>
+
+</html>
